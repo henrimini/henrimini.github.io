@@ -2,13 +2,10 @@ body, html {
     height: 100%;
 }
 .background-1 {
-    /* The image used */
     background-image: url("../images/piano-1.jpg");
 
-    /* Full height */
     height: 100%;
 
-    /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,10 +14,17 @@ body, html {
 .background-2 {
     background-image: url("../images/piano-2.jpg");
 
-    /* Full height */
     height: auto;
 
-    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.background-3 {
+    background-image: url("../images/piano-3.jpg");
+
+
     background-position: center;
     background-repeat: repeat;
     background-size: cover;
@@ -30,6 +34,15 @@ hr {
     border-bottom: 1px solid orange;
 }
 
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
+
+.photo{
+    width: 150px;
+    height: 174px;
+}
 .panel {
     border: solid 1px #AAA;
     padding: 25px;

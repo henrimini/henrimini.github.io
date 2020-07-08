@@ -32,9 +32,9 @@
     </div>
 
 </nav>
-<div class="background-1">
+<div class="background-3">
     <br>
-    <div class="musicNote">
+    <div class="musicNote text-danger">
         <div class="note-1">
             &#9835; &#9833;
         </div>
@@ -46,6 +46,108 @@
         </div>
         <div class="note-4">
             &#9834;
+        </div>
+    </div>
+
+
+    <div class="container panel rounded mb-4">
+        <div>
+            <a data-toggle="collapse" href="#coinIsep" aria-expanded="true" aria-controls="coinIsep" class="notunderlined text-info">
+                <h5 class="font-weight-bold">Réalisation d’un site d’e-commerce, Coin'Isep</h5>
+            </a>
+        </div>
+        <hr>
+        <div id="coinIsep" class="collapse text-white">
+            <br>
+            <p class="mb-1">Ce projet avait pour but la création d'un site de bout en bout. Le site devait être écolo et avoir un lien avec l'ISEP.<br>
+            Avec notre groupe de 6 personnes, nous avons décider de créer Coin'Isep qui est un leboncoin avec deux particularités :
+            </p>
+            <ul class="noteList">
+                <li class="noteList_note2">Une partie de l'argent est donné à une association (minimum de 5% du prix et ce pourcentage est modifiable)</li>
+                <li class="noteList_note3">Les rendez-vous se font avec l'intermédiaire d'un administrateur</li>
+            </ul>
+            <p>Au début, nous avons dû pitcher le projet. Une fois validé, nous avons créé plusieurs personas correspondant aux différents acteurs du site.
+                Puis nous avons réalisé un impact mapping, le story mapping et enfin les différentes Users stories. <br>
+                Ce n'est qu'après cela où nous avons pû commencer le développement du site. Le site à été codé en Java et voilà la page de planning où un utilisateur peut prendre un RDV.
+            </p>
+            <img src="images/calendrier_user.PNG" class="border border-warning img-fluid d-block shadow" alt="calendrier">
+            <p class="mt-4">Si vous voyez des ressemblances avec ce site, c'est tout à fait normal car je m'en suis inspiré. C'est d'ailleurs avec ce projet que j'ai pu découvrir Bootstrap.
+            </p>
+
+        </div>
+    </div>
+
+    <div class="container panel rounded mb-4">
+        <div>
+            <a data-toggle="collapse" href="#quebec" aria-expanded="true" aria-controls="quebec" class="notunderlined text-info">
+                <h5 class="font-weight-bold">Analyse de données GTFS du Quebec</h5>
+            </a>
+        </div>
+        <hr>
+        <div id="quebec" class="collapse text-white">
+            <br>
+            <p class="mb-4"> Sur ce projet, nous étions deux pour analyser les données GTFS du Quebec. Il s'agit de données publiques des transports en commun qui sont recencés
+                <a href="https://code.google.com/archive/p/googletransitdatafeed/wikis/PublicFeeds.wiki" class="notunderlined text-info">ici</a>.<br>
+                Vite fait, ces données contiennent entre autres les stations d'une ville, et tous les trajets passant par ces stations.<br>
+                Nous avons utilisés les données du quebec pour les retranscrire dans un graphe pondéré (avec la distance entre deux arrêts desservis comme le poids).
+                Puis nous avons utilisé l'algorithme de Dijkstra pour déterminer le chemin le plus court entre deux stations. Tout les algorithmes ont été créés à partir de zero
+                (bon on avait quand même vu la recherche des chemins en cours, cours qui étaient à distance d'ailleurs à cause du corona).
+                Et oui je mets vraiment tout ce qui me passe par la tête sur ce site!<br>
+                Bref voilà à quoi ressemble le graphe que nous avons réalisé en le comparant avec celui donné officiellement par la ville Quebec.
+            </p>
+            <div class="d-flex">
+                <div id="quebecCarousel" class="carousel slide col-6" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#quebecCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#quebecCarousel" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="images/quebec1.PNG" alt="First slide">
+
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="images/quebec2.PNG" alt="Second slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#quebecCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#quebecCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <p>J'aurais pu mettre les graphes côte à côte mais j'aime bien le carrousel.
+                    On peut voir qu'il y a des trajets assez longs sans arrêts sur notre graphe résultant et non présents sur le graphe officiel.
+                    Ce n'est pas un bug, ces trajets sont bien présents. <br>
+                Sinon, le projet à été réalisé en Java avec des tests en utilisant Junit.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container panel rounded mb-4">
+        <div>
+            <a data-toggle="collapse" href="#kingdomino" aria-expanded="true" aria-controls="kingdomino" class="notunderlined text-info">
+                <h5 class="font-weight-bold">Développement d’un jeu vidéo, Kingdomino</h5>
+            </a>
+        </div>
+        <hr>
+        <div id="kingdomino" class="collapse text-white">
+            <br>
+            <p class="mb-1">Ce projet avait pour but la création d'un jeu de société par groupe de trois.<br>
+                Le jeu consiste en une multitude de dominos contenant deux tuiles que l'on peut poser sur un plateau avec
+                certaines contraintes...<br>
+                Nous avons aussi réaliser une interface graphique permettant de tourner un domino, de le déplacer, de le placer, de choisir son prochain domino et de voir son score.
+                Le jeu peut se jouer à plusieurs et une IA à même été implémentée (mais elle n'était pas très forte). Le jeu à été codé en java orienté objet.<br>
+
+                Pour une idée de ce à quoi ressemble le jeu, voici une petite capture d'écran.
+            </p>
+            <img src="images/kingdomino.PNG" class="border border-warning img-fluid d-block shadow w-75" alt="kingdomino">
+
+
         </div>
     </div>
 
