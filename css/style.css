@@ -1,0 +1,92 @@
+body, html {
+    height: 100%;
+}
+.background {
+    /* The image used */
+    background-image: url("../images/piano-1.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+hr {
+    border-bottom: 1px solid orange;
+}
+
+.panel {
+    border: solid 1px #AAA;
+    padding: 25px;
+    box-shadow: 0 4px 8px 0 papayawhip, 0 6px 20px 0 papayawhip;
+    background-color: #343a40;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+.musicNote {
+    display: block;
+    margin: auto;
+    position: relative;
+    width: 50%;
+    min-width: 300px;
+    height: 200px;
+    border: 0px solid #000;
+    color: cornflowerblue;
+}
+
+.note-1,
+.note-2,
+.note-3,
+.note-4 {
+    position: absolute;
+    animation: notes 2s infinite linear;
+    font-size: 35px;
+    opacity: 0;
+}
+
+.note-1 {
+    top: 60px;
+    left: 0;
+    animation-delay: 0.5s;
+}
+
+.note-2 {
+    top: 30px;
+    left: 30%;
+    animation-delay: 1s;
+}
+
+.note-3 {
+    top: 90px;
+    left: 60%;
+    animation-delay: 1.5s;
+}
+
+.note-4 {
+    top: 40px;
+    left: 90%;
+    animation-delay: 2s;
+}
+
+@keyframes notes {
+    0% {
+        transform: scale(1) translate(0, 0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.5) translate(50%, -50%);
+    }
+    80% {
+        opacity: 0;
+        transform: scale(1.5) translate(100%, -100%);
+    }
+    100% {
+        transform: scale(1.5) translate(100%, -100%);
+        opacity: 0;
+    }
+}
