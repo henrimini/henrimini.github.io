@@ -27,6 +27,15 @@ hr {
     width: 100%;
 }
 
+.red-panel {
+    border: solid 1px #AAA;
+    padding: 25px;
+    box-shadow: 0 4px 8px 0 papayawhip, 0 6px 20px 0 papayawhip;
+    background-color: firebrick;
+    color: #FFFFFF;
+    width: 100%;
+}
+
 .musicNote {
     display: block;
     margin: auto;
