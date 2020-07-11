@@ -9,7 +9,7 @@
 <body>
 
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
     <div class="d-flex col-md-12 col-lg-7 col-xl-5">
     <a class="navbar-brand d-flex" href="index.html">
         <img src="images/photo.jpg" class="rounded-circle" style="width:15%" alt="Henri">
@@ -32,39 +32,26 @@
     </div>
 
 </nav>
-<div class="background-1">
-    <br>
-    <div class="musicNote">
-        <div class="note-1">
-            &#9835; &#9833;
-        </div>
-        <div class="note-2">
-            &#9833;
-        </div>
-        <div class="note-3">
-            &#9839; &#9834;
-        </div>
-        <div class="note-4">
-            &#9834;
-        </div>
-    </div>
 
-    <div class="container rounded panel bg-info text-dark">
+<canvas class="background-1 position-absolute" id="animated-bg"></canvas>
+    <br><br><br><br><br><br>
+
+    <div class="container rounded panel bg-info text-dark position-relative">
         <h3 class="font-weight-bold">Actuellement en recherche de stage de fin d'études débutant dès maintenant</h3>
         <h4 class="font-weight-light">Métiers recherchés : Développeur, Chef de projet, Product Owner</h4>
     </div>
     <br>
-    <div class="container rounded panel text-light">
+    <div class="container rounded panel text-light position-relative">
         <h4>Vous voici sur mon site en HTML / CSS et Javascript avec Bootstrap</h4>
-        <h6>Bon pour le moment il n'y a pas vraiment de js mais je vais trouver quelque chose!</h6>
+        <h6>Vous pouvez cliquer en dehors de zones de texte, ca rajoute des notes</h6>
         <hr>
         <h4>Je suis un étudiant à l'ISEP (école d'ingénieurs dans l'informatique) en début de 3<sup>ème</sup> année du cycle ingénieur</h4>
     </div>
-</div>
+
 
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
+<script src="js/script.js"></script>
 </body>
 </html>

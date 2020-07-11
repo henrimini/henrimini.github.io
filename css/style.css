@@ -4,6 +4,7 @@ body, html {
 .background-1 {
     background-image: url("../images/piano-1.jpg");
 
+    width: 100%;
     height: 100%;
 
     background-position: center;
@@ -24,6 +25,16 @@ body, html {
 .background-3 {
     background-image: url("../images/piano-3.jpg");
 
+
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.background-4 {
+    background-image: url("../images/piano-1.jpg");
+
+    height: auto;
 
     background-position: center;
     background-repeat: repeat;
