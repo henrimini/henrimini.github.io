@@ -50,6 +50,11 @@ hr {
     filter: invert(100%);
 }
 
+#imgEditCarousel img {
+    width: auto;
+    height: 30em;
+}
+
 .photo{
     width: 150px;
     height: 174px;
