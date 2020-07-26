@@ -7,6 +7,15 @@ for(var i=0;i<9;i++) {
 }
 
 $(document).ready(function() {
+    $("#yourEmail").change(function(e) {
+        if (isEmail($("#yourEmail").val())) {
+            $("#emailrepSubmit").prop('disabled', false);
+        } else {
+            $("#emailrepSubmit").prop('disabled', true);
+        }
+    });
+
+
     $("#emailrepSubmit").click(function(e) {
         loadingScreen.modal('show');
         var email = $("#yourEmail").val();
@@ -34,6 +43,12 @@ $(document).ready(function() {
             })
     });
 });
+
+
+function isEmail(email) {
+    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,6})+$/;
+    return regex.test(email);
+}
 
 
 
