@@ -193,6 +193,47 @@
 
     <div class="container panel rounded mb-4">
         <div>
+            <a data-toggle="collapse" href=".oneytrust" aria-expanded="true" aria-controls="oneytrust" class="notunderlined text-info">
+                <h5 class="font-weight-bold">Stage à Oneytrust</h5>
+            </a>
+        </div>
+        <hr>
+        <div class="collapse text-white oneytrust">
+            <br>
+            <p class="mb-1">Mon premier stage s'est passé à Oneytrust en tant que développeur.<br>
+                Les deux languages principaux étaient PHP et Python. La structure du code était en micro services, c'est pourqoui les deux langages étaient utilisés pour le même projet.
+                Des tests unitaires et/ou fonctionnels étaient obligatoire pour chaque commit.
+                Le projet en lui même, je ne suis pas sûr de pouvoir en parler. Je vais quand même vous donner une idée de quoi il s'agit.
+                Vous pouvez rentrer votre mail (pas professionel de préférence sinon il y aura probablement moins de résultats).
+                Je ne garde pas votre mail, je l'envoie juste à une api (emailrep) en passant par cors-anywhere.
+            </p>
+            <label for="yourEmail"></label>
+            <div class="d-flex">
+                <input type="email" class="form-control col-8 mr-auto" id="yourEmail" aria-describedby="emailHelp" placeholder="Entrez votre Email">
+                <button type="submit" id="emailrepSubmit" class="btn btn-info border border-warning col-3 mr-auto">Envoyer</button>
+            </div>
+            <br>
+            <p> Il faut aussi savoir que emailrep est gratuit et (ayant pu bien le tester), les résultats ne sont pas très fiables
+                mais cela vous montre un peu dans quoi j'ai pu travailler.
+                Pour le moment, les résultats ne sont pas nettoyés, j'ai laissé le Json brut.
+            </p>
+
+
+
+        </div>
+        <div class="collapse show text-white oneytrust">
+            <div class="d-inline-flex bg-info border border-white p-2 m-2">Javascript</div>
+            <div class="d-inline-flex bg-info border border-white p-2 m-2">HTML / CSS </div>
+            <div class="d-inline-flex bg-info border border-white p-2 m-2">Tests</div>
+            <div class="d-inline-flex bg-info border border-white p-2 m-2">Selenium</div>
+            <div class="d-inline-flex bg-info border border-white p-2 m-2">PHP (symphony 3)</div>
+            <div class="d-inline-flex bg-info border border-white p-2 m-2">Tests</div>
+            <div class="d-inline-flex bg-info border border-white p-2 m-2">Git</div>
+        </div>
+    </div>
+
+    <div class="container panel rounded mb-4">
+        <div>
             <a data-toggle="collapse" href=".kingdomino" aria-expanded="true" aria-controls="kingdomino" class="notunderlined text-info">
                 <h5 class="font-weight-bold">Développement d’un jeu vidéo, Kingdomino</h5>
             </a>
@@ -228,7 +269,7 @@
         <hr>
         <div class="collapse text-white ecom">
             <br>
-            <p> class="mb-1">Ce projet avait pour but la gestion de capteurs dans une maison connectée. Il a été réalisé en équipe de 6<br>
+            <p class="mb-1">Ce projet avait pour but la gestion de capteurs dans une maison connectée. Il a été réalisé en équipe de 6<br>
                 Ce projet a mélangé beaucup de matières. Nous avons utilisé une carte TIVA auquelle on a ajouté des capteurs et des actionneurs.
                 Il y a ensuite une communication bluetooth pour donner les valeurs des capteurs et réccupérer les ordres de l'actionneur.
                 Tout cela est accecible via un site que nous avons réalisé. On y réccupère les valeurs des capteurs et on peut préparer les valeurs des actionneurs.
@@ -245,13 +286,27 @@
         </div>
     </div>
 
-
-
     <br>
+
+        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="emailrepModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body" id="emailrepFail">
+                        <pre>
+                            <code id="emailrepResult">
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="modal-footer m-auto">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+            </div>
+    </div>
 
 </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
+    <script src="js/projects.js"></script>
 </body>
 </html>
