@@ -1,80 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Henri de Guerry</title>
 </head>
+
 <body>
 
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="d-flex col-md-12 col-lg-7 col-xl-5">
-        <a class="navbar-brand d-flex" href="index.html">
-            <img src="images/photo.jpg" class="rounded-circle" style="width:15%" alt="Henri">
-            <h1 class="align-self-center ml-md-2 ml-lg-5">Henri de Guerry</h1>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="d-flex col-md-12 col-lg-7 col-xl-5">
+            <a class="navbar-brand d-flex" href="index.html">
+                <img src="images/photo.jpg" class="rounded-circle" style="width:15%" alt="Henri">
+                <h1 class="align-self-center ml-md-2 ml-lg-5">Henri de Guerry</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <a href="cv.html" class="btn btn-outline-info btn-lg mr-3" role="button">Mon CV</a>
+                <a href="projets.html" class="btn btn-outline-info btn-lg mr-3" role="button">Mes Projets</a>
+                <a href="moi.html" class="btn btn-outline-info btn-lg mr-3 active" role="button">Moi</a>
+            </form>
+        </div>
+
+    </nav>
+    <div class="background-4">
+        <br>
+        <div class="musicNote">
+            <div class="note-1">
+                &#9835; &#9833;
+            </div>
+            <div class="note-2">
+                &#9833;
+            </div>
+            <div class="note-3">
+                &#9839; &#9834;
+            </div>
+            <div class="note-4">
+                &#9834;
+            </div>
+        </div>
+
+        <div class="container rounded panel text-light">
+            <h4>Parlons de moi</h4>
+            <hr>
+            <h6>Si vous ne l'avez pas déjà deviné, j'aime bien la musique!</h6>
+            <p>J'ai commencé le piano quand j'étais assez petit. Je suis passé par la petite école du village.
+                Puis je suis passé à l'orgue au conservatoire quand je suis arrivé sur Paris.<br>
+                Voici un petit enregistrement de moi-même jouant la toccata de Dubois à l'orgue de
+                Chavagnes-en-Paillers.
+                La qualité de l'enregistrement n'est pas géniale et ma performance n'est pas non plus transcendante.
+                C'est toujours sympa de le réécouter quand même.</p>
+            <audio controls>
+                <source src="images/Toccata_dubois.mp3" type="audio/mpeg">
+                Votre navigateur ne supporte pas les fichiers audio.
+            </audio>
+            <p>Pendant la prépa, j'ai cependant arrêté la musique. Mais j'ai tout de même plus récemment rejoint
+                récemment un groupe de rock ... japonais où je rejoue du piano.
+                Nous avons une chaîne youtube (mais on n'est pas très actifs) et nous avons déjà réalisé plusieurs
+                concerts à des petites conventions japonaises dans la france.
+                Je vous laisse sur notre dernière vidéo. Le groupe s'est séparé pendant la crise sanitaire.</p>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tBd3It-Cuyw"
+                    allowfullscreen></iframe>
+            </div>
+
+
+
+
+        </div>
     </div>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <a href="cv.html" class="btn btn-outline-info btn-lg mr-3" role="button">Mon CV</a>
-            <a href="projets.html" class="btn btn-outline-info btn-lg mr-3" role="button">Mes Projets</a>
-            <a href="moi.html" class="btn btn-outline-info btn-lg mr-3 active" role="button">Moi</a>
-        </form>
-    </div>
-
-</nav>
-<div class="background-4">
-    <br>
-    <div class="musicNote">
-        <div class="note-1">
-            &#9835; &#9833;
-        </div>
-        <div class="note-2">
-            &#9833;
-        </div>
-        <div class="note-3">
-            &#9839; &#9834;
-        </div>
-        <div class="note-4">
-            &#9834;
-        </div>
-    </div>
-
-    <div class="container rounded panel text-light">
-        <h4>Parlons de moi</h4>
-        <hr>
-        <h6>Si vous ne l'avez pas déjà deviné, j'aime bien la musique!</h6>
-        <p>J'ai commencé le piano quand j'étais assez petit. Je suis passé par la petite école du village.
-            Puis je suis passé à l'orgue au conservatoire quand je suis arrivé sur Paris.<br>
-            Voici un petit enregistrement de moi-même jouant la toccata de Dubois à l'orgue de Chavagnes-en-Paillers.
-            La qualité de l'enregistrement n'est pas géniale et ma performance n'est pas non plus transcendante. C'est toujours sympa de le réécouter quand même.</p>
-        <audio controls>
-            <source src="images/Toccata_dubois.mp3" type="audio/mpeg">
-            Votre navigateur ne supporte pas les fichiers audio.
-        </audio>
-        <p>Pendant la prépa, j'ai cependant arrêté la musique. Mais j'ai tout de même plus récemment rejoint récemment un groupe de rock ... japonais où je rejoue du piano.
-        Nous avons une chaîne youtube (mais on n'est pas très actifs) et nous avons déjà réalisé plusieurs concerts à des petites conventions japonaises dans la france.
-        Je vous laisse sur notre dernière vidéo.</p>
-        <div class="embed-responsive embed-responsive-16by9" >
-        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tBd3It-Cuyw" allowfullscreen></iframe>
-        </div>
-
-
-
-
-    </div>
-</div>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 
 </body>
+
 </html>
